@@ -8,7 +8,6 @@ const AvailableMeals = () => {
   const [meals, setMeals] = useState([]);
   const [httpError, setHttpError] = useState();
 
-
   useEffect(() => {
     const fetchMeals = async () => {
       const response = await fetch('https://spotify-clone-58d82-default-rtdb.firebaseio.com/meals.json');
